@@ -266,8 +266,8 @@ const withSession = () => {
 const withOutSession = () => {
 
     console.log('No tenemos session guardada');
-    let dirSessionStorage = __dirname + "\\.wwebjs_auth";
-    console.log(dirSessionStorage.replaceAll('\\', '//'));
+    // let dirSessionStorage = __dirname + "\\.wwebjs_auth";
+    // console.log(dirSessionStorage.replaceAll('\\', '//'));
 
 
     client = new Client({
