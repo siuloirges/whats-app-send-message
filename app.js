@@ -304,6 +304,18 @@ const withOutSession = () => {
 
             }
         });
+
+        app.get('/quit', function (req, res) {
+            const { tell, message } = req.query;
+            try {
+                var rimraf = require("rimraf");
+                rimraf("./.wwebjs_auth", function () { console.log("Borrado"); });
+                res.send('Success');
+            } catch (error) {
+                res.send(`error: ${error}`);
+
+            }
+        });
         // socketEvents.sendStatus(client)
     });
 
@@ -355,8 +367,7 @@ const loadRoutes = (client) => {
 
 //  fs.unlink('./WWebJS');
 // console.log("Go");
-// var rimraf = require("rimraf");
-// rimraf("./WWebJS", function () { console.log("Borrado"); });
+
 // (fs.existsSync(SESSION_FILE_PATH)) ? withSession() : withOutSession();
 
 
