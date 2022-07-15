@@ -376,6 +376,18 @@ setInterval(() => {
 const loadRoutes = (client) => {
     app.use('/api/', middlewareClient(client), require('./routes/api'))
 }
+
+app.get('/quit', function (req, res) {
+    const { tell, message } = req.query;
+    try {
+        var rimraf = require("rimraf");
+        rimraf("./.wwebjs_auth", function () { console.log("Borrado"); });
+        res.send('success quit');
+    } catch (error) {
+        res.send(`error: ${error}`);
+
+    }
+});
 /**
  * Revisamos si existe archivo con credenciales!
  */
