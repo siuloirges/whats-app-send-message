@@ -1,12 +1,4 @@
-2022/07/14-12:05:27.835 2c08 Creating DB C:\Users\57305\Desktop\whats-app-send-message\.wwebjs_auth\session-33333\session-33333\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb since it was missing.
-2022/07/14-12:05:27.842 2c08 Reusing MANIFEST C:\Users\57305\Desktop\whats-app-send-message\.wwebjs_auth\session-33333\session-33333\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2022/07/14-12:05:49.466 1268 Level-0 table #5: started
-2022/07/14-12:05:49.606 1268 Level-0 table #5: 1157600 bytes OK
-2022/07/14-12:05:49.650 1268 Delete type=0 #3
-2022/07/14-12:05:55.501 1268 Level-0 table #7: started
-2022/07/14-12:05:55.553 1268 Level-0 table #7: 1253188 bytes OK
-2022/07/14-12:05:55.555 1268 Delete type=0 #4
-2022/07/14-12:05:55.564 1268 Compacting 1@1 + 1@2 files
-2022/07/14-12:05:55.853 1268 Generated table #8@1: 19687 keys, 1214615 bytes
-2022/07/14-12:05:55.853 1268 Compacted 1@1 + 1@2 files => 1214615 bytes
-2022/07/14-12:05:55.854 1268 compacted to: files[ 0 0 1 0 0 0 0 ]
+2022/07/14-22:33:38.622 361c Reusing MANIFEST C:\Users\57305\Desktop\whats-app-send-message\.wwebjs_auth\session-33333\session-33333\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2022/07/14-22:33:38.624 361c Delete type=0 #3
+2022/07/14-22:33:38.624 361c Delete type=2 #5
+2022/07/14-22:33:38.624 361c Delete type=2 #7
