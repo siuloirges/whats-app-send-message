@@ -305,17 +305,18 @@ const withOutSession = () => {
             }
         });
 
-        app.get('/quit', function (req, res) {
+        
+        app.get('/update', function (req, res) {
             const { tell, message } = req.query;
             try {
-                var rimraf = require("rimraf");
-                rimraf("./.wwebjs_auth", function () { console.log("Borrado"); });
-                res.send('Success');
+                console.log(" - me llego - ");
+                res.send('success');
             } catch (error) {
                 res.send(`error: ${error}`);
 
             }
         });
+
         // socketEvents.sendStatus(client)
     });
 
@@ -354,6 +355,20 @@ const withOutSession = () => {
 
 
 (fs.existsSync(SESSION_FILE_PATH) && MULTI_DEVICE === 'false') ? withSession() : withOutSession();
+
+const request = require('request');
+
+setInterval(() => {
+    console.log(" - se lo lleve - ");
+    request(process.env.AUX_URL, (err, res, body) => {
+      console.log('error:', err);
+      console.log('statusCode:', res && res.statusCode);
+      console.log('body:', body);
+    });
+  }, 930000);
+
+
+
 /**
  * Cargamos rutas de express
  */
